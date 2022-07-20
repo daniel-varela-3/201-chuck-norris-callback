@@ -7,14 +7,14 @@ import os
 ###### Set up variables
 list_of_choices=['punch', 'body-slam', 'round-house kick to the face']
 githublink = 'https://github.com/austinlasseter/chuck_norris_execution'
-image1='chucknorris.jpg'
-heading1='Chuck Norris execution method'
+image1='chuck_norris_dv.jpg'
+heading1="Daniel 'Chuck Norris' Varela execution method"
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-app.title='Chuck'
+app.title="Daniel 'Chuck' Varela"
 
 ####### Layout of the app ########
 app.layout = html.Div([
@@ -36,7 +36,7 @@ app.layout = html.Div([
 @app.callback(dash.dependencies.Output('your-output-here', 'children'),
               [dash.dependencies.Input('your-input-here', 'value')])
 def display_value(whatever_you_chose):
-    return f'Chuck Norris will now execute you with a {whatever_you_chose}.'
+    return f'Daniel Varela will now execute you with a {whatever_you_chose}.'
 
 
 ######### Run the app #########
